@@ -44,9 +44,14 @@ body {background-color: rgb(240, 227, 208);}
   background-image: linear-gradient(to bottom, #e1b959, #795807);
 }
 
+ul.main-menu {
+  width: 100%;
+}
+
 .nav .main-btn {
-  padding: 5px 116px;
+  padding: 5px 0;
   margin-right: 20px;
+  width: 100%;
 }
 
 .main-menu .btn:hover {
