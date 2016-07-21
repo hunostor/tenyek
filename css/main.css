@@ -110,6 +110,23 @@ nav.navbar {margin-top: 0px; min-height: 20px;}
     .xs-top-margin {
       margin-top: 40px;
     }
+
+    .main-menu .sidebar-books-list li {
+      height: 90px;
+    }
+
+    .navbar-nav {
+     margin: 0; 
+    }
+}
+
+.main-menu .sidebar-books-list {
+      padding-bottom: 50px;
+      padding-top: 30px;
+    }
+
+.main-menu .sidebar-books-list ul li a img {
+  width: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -119,6 +136,10 @@ nav.navbar {margin-top: 0px; min-height: 20px;}
     .nav > li > a {
         margin-top: 15px;
     }
+}
+
+.main-menu .sidebar-books-list {
+
 }
 
 .sidebar-left, .content, .sidebar-right {
