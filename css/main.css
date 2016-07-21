@@ -17,6 +17,10 @@ body {background-color: rgb(240, 227, 208);}
   text-decoration: none;
 }
 
+.custom-btn {
+  padding: 5px 10px;
+}
+
 .btn-blue {
   background: #4bc6fc;
   background-image: -webkit-linear-gradient(top, #4bc6fc, #003985);
@@ -102,12 +106,15 @@ nav.navbar {margin-top: 0px; min-height: 20px;}
     .main-menu li {
       height: 45px;
     }
+
+    .xs-top-margin {
+      margin-top: 40px;
+    }
 }
 
 @media (max-width: 1200px) {
     .btn {
         font-size: 15px;
-        padding: 11px 23px 11px 23px;
     }
     .nav > li > a {
         margin-top: 15px;
