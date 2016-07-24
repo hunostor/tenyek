@@ -1,4 +1,5 @@
-body {background-color: rgb(240, 227, 208);}
+html {font-size: 16px;}
+body {background-color: rgb(240, 227, 208);font-size: 16px;}
 .red {color: red;}
 /* Button CSS generatr */
 .btn {
@@ -11,10 +12,24 @@ body {background-color: rgb(240, 227, 208);}
   box-shadow: 4px 4px 6px #666666;
   font-family: Arial;
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   padding: 11px 23px 11px 23px;
   border: solid #bbb35d 5px;
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .btn {
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
 }
 
 .custom-btn {
