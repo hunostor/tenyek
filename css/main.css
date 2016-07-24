@@ -138,10 +138,6 @@ nav.navbar {margin-top: 0px; min-height: 20px;}
     }
 }
 
-.main-menu .sidebar-books-list {
-
-}
-
 .sidebar-left, .content, .sidebar-right {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -159,7 +155,7 @@ footer {
   margin: 0 auto;
 }
 
-#slide-submenu{
+#slide-submenu {
   background: rgba(0, 0, 0, 0.45);
   display: inline-block;
   padding: 0 8px;
