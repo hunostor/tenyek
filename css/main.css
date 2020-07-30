@@ -1,6 +1,13 @@
-html {font-size: 16px;}
-body {background-color: rgb(240, 227, 208);font-size: 16px;}
-.red {color: red;}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: rgb(240, 227, 208);
+  font-size: 16px;
+}
+.red {
+  color: red;
+}
 /* Button CSS generatr */
 .btn {
   -webkit-border-radius: 28;
@@ -19,17 +26,17 @@ body {background-color: rgb(240, 227, 208);font-size: 16px;}
 }
 
 @media (min-width: 992px) {
-    .btn {
-      letter-spacing: 2px;
-      font-size: 16px;
-    }
+  .btn {
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
-    .btn {
-      letter-spacing: 2px;
-      font-size: 16px;
-    }
+  .btn {
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
 }
 
 .custom-btn {
@@ -80,14 +87,17 @@ ul.main-menu {
 }
 
 .nav > li > a {
-    position: relative;
-    display: block;
-    padding: 5px 27px;
-    margin-right: 10px;
-    margin-top: 5px;
+  position: relative;
+  display: block;
+  padding: 5px 27px;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
-nav.navbar {margin-top: 0px; min-height: 20px;}
+nav.navbar {
+  margin-top: 0px;
+  min-height: 20px;
+}
 
 .main-menu li {
   height: 54px;
@@ -114,46 +124,48 @@ nav.navbar {margin-top: 0px; min-height: 20px;}
 
 /* main-menu media */
 @media (max-width: 768px) {
-    .nav > li > a {
-        margin-top: 15px;
-    }
+  .nav > li > a {
+    margin-top: 15px;
+  }
 
-    .main-menu li {
-      height: 45px;
-    }
+  .main-menu li {
+    height: 45px;
+  }
 
-    .xs-top-margin {
-      margin-top: 40px;
-    }
+  .xs-top-margin {
+    margin-top: 40px;
+  }
 
-    .main-menu .sidebar-books-list li {
-      height: 90px;
-    }
+  .main-menu .sidebar-books-list li {
+    height: 90px;
+  }
 
-    .navbar-nav {
-     margin: 0; 
-    }
+  .navbar-nav {
+    margin: 0;
+  }
 }
 
 .main-menu .sidebar-books-list {
-      padding-bottom: 50px;
-      padding-top: 30px;
-    }
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
 
 .main-menu .sidebar-books-list ul li a img {
   width: 20px;
 }
 
 @media (max-width: 1200px) {
-    .btn {
-        font-size: 15px;
-    }
-    .nav > li > a {
-        margin-top: 15px;
-    }
+  .btn {
+    font-size: 15px;
+  }
+  .nav > li > a {
+    margin-top: 15px;
+  }
 }
 
-.sidebar-left, .content, .sidebar-right {
+.sidebar-left,
+.content,
+.sidebar-right {
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -185,61 +197,118 @@ footer {
 
 /*labmenu*/
 A.labmenu:link {
-  color : #660000;
-  
-  font-size:11px;
-  text-decoration : none;
+  color: #660000;
 
-  
-  margin-top:3px;
-  margin-bottom:3px;
+  font-size: 11px;
+  text-decoration: none;
+
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding-left: 3px;
   padding-right: 3px;
-  
-  visibility:visible;
-  line-height:16px;
-  
+
+  visibility: visible;
+  line-height: 16px;
 }
 A.labmenu:active {
-  color : #cc0000;
-  
-  font-size:11px;
-  text-decoration : none;
-  margin-top:3px;
-  margin-bottom:3px;
+  color: #cc0000;
+
+  font-size: 11px;
+  text-decoration: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding-left: 3px;
   padding-right: 3px;
-  
-  
-  line-height:14px;
-  font-weight : bold;
+
+  line-height: 14px;
+  font-weight: bold;
 }
 A.labmenu:visited {
-  color : #cc0000;
-  font-size:11px;
+  color: #cc0000;
+  font-size: 11px;
   padding-left: 3px;
   padding-right: 3px;
-  
-  
-  text-decoration : none;
-  
-  line-height:14px;
-  
+
+  text-decoration: none;
+
+  line-height: 14px;
 }
-A.labmenu:HOVER {
-  color : #0033cc;
-  font-size:11px;
+A.labmenu:hover {
+  color: #0033cc;
+  font-size: 11px;
   padding-left: 3px;
   padding-right: 3px;
-  
-  
-  line-height:14px; 
+
+  line-height: 14px;
 }
 
 .impresszum {
   margin-top: 30px;
 }
 
-.secondmenu li a{
-  margin-left:15px;
+.secondmenu li a {
+  margin-left: 15px;
+}
+
+.btn-english:hover {
+  color: #660000 !important;
+}
+
+.btn-english {
+  color: #000;
+  font-weight: bold;
+  /* border: 0px !important; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 50px;
+  background-image: linear-gradient(
+      90deg,
+      transparent 46%,
+      red 46%,
+      red 56%,
+      transparent 56%
+    ),
+    linear-gradient(
+      transparent 38%,
+      white 38%,
+      white 42%,
+      red 42%,
+      red 58%,
+      white 58%,
+      white 62%,
+      transparent 62%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 44%,
+      white 44%,
+      white 46%,
+      red 46%,
+      red 56%,
+      white 56%,
+      white 58%,
+      transparent 58%
+    ),
+    linear-gradient(
+      33deg,
+      transparent 45%,
+      white 45%,
+      white 48%,
+      red 48%,
+      red 54%,
+      white 54%,
+      white 57%,
+      transparent 57%
+    ),
+    linear-gradient(
+      -33deg,
+      mediumblue 45%,
+      white 45%,
+      white 48%,
+      red 48%,
+      red 54%,
+      white 54%,
+      white 57%,
+      mediumblue 57%
+    );
 }

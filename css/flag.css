@@ -1,0 +1,164 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+}
+
+.flag--uk {
+  width: 110px;
+  height: 65px;
+  background: linear-gradient(
+      90deg,
+      transparent 46%,
+      red 46%,
+      red 56%,
+      transparent 56%
+    ),
+    linear-gradient(
+      transparent 38%,
+      white 38%,
+      white 42%,
+      red 42%,
+      red 58%,
+      white 58%,
+      white 62%,
+      transparent 62%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 44%,
+      white 44%,
+      white 46%,
+      red 46%,
+      red 56%,
+      white 56%,
+      white 58%,
+      transparent 58%
+    ),
+    linear-gradient(
+      33deg,
+      transparent 45%,
+      white 45%,
+      white 48%,
+      red 48%,
+      red 54%,
+      white 54%,
+      white 57%,
+      transparent 57%
+    ),
+    linear-gradient(
+      -33deg,
+      mediumblue 45%,
+      white 45%,
+      white 48%,
+      red 48%,
+      red 54%,
+      white 54%,
+      white 57%,
+      mediumblue 57%
+    );
+}
+
+.flag {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  background: linear-gradient(
+      180deg,
+      transparent,
+      transparent 44px,
+      #c8102e 44px,
+      #c8102e 66px,
+      transparent 66px,
+      transparent 100%
+    ),
+    linear-gradient(
+      90deg,
+      transparent,
+      transparent 99px,
+      #c8102e 99px,
+      #c8102e 121px,
+      transparent 121px,
+      transparent 100%
+    ),
+    linear-gradient(
+      180deg,
+      transparent,
+      transparent 37px,
+      #fff 37px,
+      #fff 73px,
+      transparent 73px,
+      transparent 100%
+    ),
+    linear-gradient(
+      90deg,
+      transparent,
+      transparent 92px,
+      #fff 92px,
+      #fff 128px,
+      transparent 128px,
+      transparent 100%
+    ),
+    linear-gradient(
+        26.56505deg,
+        transparent,
+        transparent 91px,
+        #c8102e 91px,
+        #c8102e 98px,
+        transparent 98px,
+        transparent 100%
+      )
+      0 0/110px 100% no-repeat,
+    linear-gradient(
+        -26.56505deg,
+        transparent,
+        transparent 98px,
+        #c8102e 98px,
+        #c8102e 106px,
+        transparent 106px,
+        transparent 100%
+      )
+      110px 0/110px 100% no-repeat,
+    linear-gradient(
+        26.56505deg,
+        transparent,
+        transparent 98px,
+        #c8102e 98px,
+        #c8102e 106px,
+        transparent 106px,
+        transparent 100%
+      )
+      110px 55px/110px 100% no-repeat,
+    linear-gradient(
+        -26.56505deg,
+        transparent,
+        transparent 91px,
+        #c8102e 91px,
+        #c8102e 98px,
+        transparent 98px,
+        transparent 100%
+      )
+      0 55px/110px 100% no-repeat,
+    linear-gradient(
+      27deg,
+      transparent,
+      transparent 87px,
+      #fff 87px,
+      #fff 109px,
+      transparent 109px,
+      transparent 100%
+    ),
+    linear-gradient(
+      153deg,
+      transparent,
+      transparent 87px,
+      #fff 87px,
+      #fff 109px,
+      transparent 109px,
+      transparent 100%
+    ),
+    #012169 !important;
+}
