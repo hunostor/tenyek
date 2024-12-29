@@ -207,29 +207,46 @@
             <!--Font size-->
             <div class="row">
               <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                <button type="button" onclick="contentTextSizeIncrease('main-content')" class="btn btn-yellow">A+ Nagyítás</button>
-                <button type="button" onclick="contentTextSizeDecrease('main-content')" class="btn btn-yellow">A- Kicsinyítés</button>
-                <button type="button" onclick="setDefaultFontSize('main-content')" class="btn btn-yellow">A Visszaállítás</button>
+                <button 
+                  type="button" 
+                  title="Betűméret nagyítás" 
+                  onclick="contentTextSizeIncrease('main-content')" 
+                  class="btn btn-yellow">
+                    A+ Nagyítás
+                </button>
+                <button 
+                  type="button" 
+                  title="Betűméret kicsinyítás" 
+                  onclick="contentTextSizeDecrease('main-content')" 
+                  class="btn btn-yellow">
+                    A- Kicsinyítés
+                </button>
+                <button 
+                  type="button" 
+                  title="Betűméret eredeti méretre" 
+                  onclick="resetFontSize('main-content')" 
+                  class="btn btn-yellow">
+                    A Visszaállítás
+                </button>
               </div>
             </div>
-            <!--Font size end-->
-  
-          <!-- *********************************************************************************
+            <!--Font size end-->                  
+
+              <div id="main-content" style="font-size: 20px;">
+
+                <!-- *********************************************************************************
                                      IDE JÖN A TARTALOM !
            **********************************************************************************-->
             
-            <!--<h1>IDE JÖN A TARTALOM!</h1>
+                  <!--<h1>IDE JÖN A TARTALOM!</h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
 
-                  
-
-              <div id="main-content" style="font-size: 20px;">
                 <div align="center" style="text-align:justify; width:95%">
 <div align="center" style="margin-bottom:-15px"><img src="kennedy_hooker_nagy.jpg" class="img-responsive" border=""></div>
 <h1 style="color:#0C4491" align="center">Feketén-fehéren a Covid-19 oltások mellékhatásairól
@@ -899,10 +916,19 @@ document.write(images[index]);
   <script type="text/javascript">
       const defaultMainContentFontSize = 20;
 
-      setDefaultFontSize = (contentId) => {
+      setDefaultContentFontSize = (contentId) => {
+        const mainContent = document.getElementById(contentId);
+        const savedFontSize = localStorage.getItem('contentFontSize');
+        mainContent.style.fontSize = savedFontSize;
+      }
+
+      setDefaultContentFontSize('main-content');
+
+      resetFontSize = (contentId) => {
         const mainContent = document.getElementById(contentId);
         let fontSize = defaultMainContentFontSize + 'px';
         mainContent.style.fontSize = fontSize;
+        localStorage.setItem('contentFontSize', fontSize);
       }
 
       contentTextSizeIncrease = (contentId) => {
@@ -910,12 +936,14 @@ document.write(images[index]);
         let actualFontSize = window.getComputedStyle(mainContent).fontSize;
         let fontSize = parseInt(actualFontSize) + 1 + 'px';
         mainContent.style.fontSize = fontSize;
+        localStorage.setItem('contentFontSize', fontSize);
       }
       contentTextSizeDecrease = (contentId) => {
         const mainContent = document.getElementById(contentId);
         let actualFontSize = window.getComputedStyle(mainContent).fontSize;
         let fontSize = parseInt(actualFontSize) - 1 + 'px';
         mainContent.style.fontSize = fontSize;
+        localStorage.setItem('contentFontSize', fontSize);
       }
     </script>
 </html>
