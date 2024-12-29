@@ -207,8 +207,9 @@
             <!--Font size-->
             <div class="row">
               <div class="btn-group btn-group-sm" role="group" aria-label="...">
-                <button type="button" class="btn btn-yellow">A+ Nagyítás</button>
-                <button type="button" class="btn btn-yellow">A- Kicsinyítés</button>
+                <button type="button" onclick="contentTextSizeIncrease('main-content')" class="btn btn-yellow">A+ Nagyítás</button>
+                <button type="button" onclick="contentTextSizeDecrease('main-content')" class="btn btn-yellow">A- Kicsinyítés</button>
+                <button type="button" onclick="setDefaultFontSize('main-content')" class="btn btn-yellow">A Visszaállítás</button>
               </div>
             </div>
             <!--Font size end-->
@@ -895,4 +896,26 @@ document.write(images[index]);
     
   </body>
   <script src="js/sidebar_menu.js"></script>
+  <script type="text/javascript">
+      const defaultMainContentFontSize = 20;
+
+      setDefaultFontSize = (contentId) => {
+        const mainContent = document.getElementById(contentId);
+        let fontSize = defaultMainContentFontSize + 'px';
+        mainContent.style.fontSize = fontSize;
+      }
+
+      contentTextSizeIncrease = (contentId) => {
+        const mainContent = document.getElementById(contentId);
+        let actualFontSize = window.getComputedStyle(mainContent).fontSize;
+        let fontSize = parseInt(actualFontSize) + 1 + 'px';
+        mainContent.style.fontSize = fontSize;
+      }
+      contentTextSizeDecrease = (contentId) => {
+        const mainContent = document.getElementById(contentId);
+        let actualFontSize = window.getComputedStyle(mainContent).fontSize;
+        let fontSize = parseInt(actualFontSize) - 1 + 'px';
+        mainContent.style.fontSize = fontSize;
+      }
+    </script>
 </html>
